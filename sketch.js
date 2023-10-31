@@ -16,20 +16,12 @@ function setup() {
     engine = Engine.create();
     world = engine.world;
 
-    parado = { isStatic: true }
-
-    solo = Bodies.rectangle(200, 390, 400, 20, parado);
-    World.add(world, solo);
-
-    rectMode(CENTER);
-    ellipseMode(RADIUS);
 }
 
 
 function draw() {
     background("blue");
     Engine.update(engine);
-    fill("brown")
-    rect(solo.position.x, solo.position.y, 400, 20);
+    
 
 }
